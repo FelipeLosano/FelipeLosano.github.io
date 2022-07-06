@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- favicon -->
-  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
   <!-- FontAwesome -->
-  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Portifolio | Felipe Losano</title>
 </head>
 
 <body>
 
-  <head>
+  <header>
     <div class="container-header">
       <nav id="navbar">
         <ul>
@@ -24,11 +24,10 @@
           <li class="right"><a href="#Contato">Contato</a></li>
           <li class="right"><a href="#Projetos">Projetos</a></li>
           <li class="right "><a href="#Sobre">Sobre</a></li>
-          <li class="right active"><a href="#Home">Home</a></li>
         </ul>
       </nav>
     </div>
-  </head>
+  </header>
 
   <main>
     <div class="container-main">
@@ -38,17 +37,17 @@
         <div class="apresentacao">
           <div class="apresentacao-div">
             <span>Olá, eu sou<br />
-              <span class="apresnetacao-name">/Felipe Losano;</span><br />
+              <span class="apresentacao-name">/Felipe Losano;</span><br />
               Desenvolvedor Front-End</span>
             <div class="div-btn">
               <a class="btn" href="https://www.linkedin.com/in/felipelosano/" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                  class="fa-brands fa-linkedin"></i>LinkedIn</a>
               <a class="btn" href="https://github.com/FelipeLosano" target="_blank"><i class="fa-brands fa-github"></i>
                 GitHub</a>
             </div>
           </div>
           <div class="apresentacao-img">
-            <img src="/assets/img/img-ilustration.png" alt="Ilustração programador">
+            <img src="./assets/img/img-ilustration.png" alt="Ilustração programador">
           </div>
         </div>
       </section>
@@ -56,17 +55,24 @@
       <!-- Sobre -->
       <section id="Sobre">
         <div class="sobre">
-          <div class="sobre-img"><img src="/assets/img/FelipeLosano.jpg" alt="Felipe Losano"></div>
+          <div class="sobre-img">
+            <img src="./assets/img/FelipeLosano.jpg" alt="Felipe Losano">
+          </div>
           <div class="sobre-mim">
             <h1>Sobre Mim</h1>
             <h4>São paulo, SP</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dicta quibusdam obcaecati atque tempore
               nihil nam, aut minima sequi reprehenderit quidem et laborum in aliquid, adipisci quod. Quidem, alias
               corporis?</p>
+            <div class="div-btn">
+              <a class="btn" href="Felipe Losano.pdf" download="Felipe Losano.pdf"><i
+                  class="fa-solid fa-cloud-arrow-down"></i>Curriculo</a>
+            </div>
           </div>
         </div>
       </section>
 
+      <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
       <!-- Projetos -->
       <section id="projetos"></section>
 
@@ -83,7 +89,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

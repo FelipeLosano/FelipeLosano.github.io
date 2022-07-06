@@ -13,25 +13,25 @@ function typeWrite(elemento) {
 	});
 }
 
-// When the user scrolls the page, execute myFunction
+var btn = document.querySelector('#back-to-top');
+
 window.onscroll = function () {
-	myFunction();
+	scrollFunction();
 };
 
-// Get the navbar
-var navbar = document.getElementById('navbar');
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-	if (window.pageYOffset >= sticky) {
-		navbar.classList.add('sticky');
+function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		btn.style.display = 'block';
 	} else {
-		navbar.classList.remove('sticky');
+		btn.style.display = 'none';
 	}
 }
 
-const titulo = document.querySelector('.apresnetacao-name');
+// When the user clicks on the button, scroll to the top of the document
+btn.addEventListener('click', () => {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
+const titulo = document.querySelector('.apresentacao-name');
 typeWrite(titulo);
