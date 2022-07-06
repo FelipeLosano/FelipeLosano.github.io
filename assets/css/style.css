@@ -143,8 +143,8 @@ body {
 	background-size: cover;
 	background-position: center;
 }
-.sobre {
-	padding: 15% 5%;
+.sobre-div {
+	padding: 18% 5%;
 	width: 90%;
 	height: auto;
 	display: flex;
@@ -166,6 +166,36 @@ body {
 	width: 50%;
 	color: #fff;
 	margin: 73px 0 50px 50px;
+}
+
+.projetos-div {
+	padding: 5% 5%;
+	color: #fff;
+}
+
+.projetos-item {
+	margin: 0 0 50px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.projeto-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.projetos-item img {
+	width: 100px;
+	height: 100px;
+	border-radius: 1rem;
+}
+.projetos-item-div {
+	margin-left: 25px;
 }
 
 /* FOOTER */
@@ -192,8 +222,8 @@ body {
 	border: #008b8b solid 2px;
 	border-radius: 0.5rem;
 	position: fixed;
-	bottom: 50px;
-	right: 50px;
+	bottom: 20px;
+	right: 20px;
 	transition: 0.3s;
 	z-index: 2;
 	cursor: pointer;
