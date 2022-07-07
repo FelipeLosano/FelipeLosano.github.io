@@ -60,9 +60,8 @@ body {
 }
 
 .apresentacao {
-	padding: 10% 5%;
-	width: 90%;
-	height: auto;
+	padding: 0 5%;
+	height: 100%;
 	font-size: 27px;
 	color: #fff;
 	display: grid;
@@ -70,9 +69,7 @@ body {
 }
 
 .apresentacao-div {
-	width: 80%;
-	align-self: center;
-	justify-self: center;
+	place-self: center;
 }
 
 .apresentacao-div span {
@@ -90,6 +87,20 @@ body {
 	animation: pisca 0.7s infinite;
 }
 
+.apresentacao-btn {
+	margin-top: 15px;
+	font-size: 15px;
+	display: flex;
+}
+
+.apresentacao-img {
+	height: 80%;
+	place-self: center;
+}
+
+.apresentacao-img img {
+	height: inherit;
+}
 /* Animação aplicada ao content referente a classe *.apresentacao-name* resultando num efeito de cursor piscando. */
 
 @keyframes pisca {
@@ -100,45 +111,6 @@ body {
 	50% {
 		opacity: 0;
 	}
-}
-
-.div-btn {
-	margin-top: 15px;
-	font-size: 15px;
-	display: flex;
-}
-
-.btn {
-	padding: 10px 5%;
-	color: #fff;
-	align-items: center;
-	border: #fff solid 2px;
-	border-radius: 2rem;
-	text-decoration: none;
-	transition: 0.3s;
-}
-
-.btn:hover {
-	color: #000;
-	background-color: #fff;
-	border: #fff solid 2px;
-}
-
-.btn:nth-child(1) {
-	margin-right: 15px;
-}
-
-.btn i {
-	margin-right: 5px;
-}
-
-.apresentacao-img {
-	width: 100%;
-	align-items: flex-end;
-}
-
-.apresentacao-img img {
-	width: 90%;
 }
 
 #Sobre {
@@ -236,4 +208,28 @@ body {
 
 #back-to-top:hover {
 	color: #008b8b;
+}
+
+.btn {
+	padding: 10px 5%;
+	color: #fff;
+	align-items: center;
+	border: #fff solid 2px;
+	border-radius: 2rem;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	color: #000;
+	background-color: #fff;
+	border: #fff solid 2px;
+}
+
+.btn:nth-child(1) {
+	margin-right: 15px;
+}
+
+.btn i {
+	margin-right: 5px;
 }
