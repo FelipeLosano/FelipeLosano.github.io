@@ -56,7 +56,7 @@ body {
 /* MAIN */
 
 .apresentacao {
-	padding: 15% 5%;
+	padding: 0% 5% 10% 5%;
 	width: 90%;
 	height: auto;
 	font-size: 27px;
@@ -134,7 +134,7 @@ body {
 }
 
 .apresentacao-img img {
-	width: 100%;
+	width: 90%;
 }
 
 #Sobre {
@@ -144,7 +144,7 @@ body {
 	background-position: center;
 }
 .sobre-div {
-	padding: 18% 5%;
+	padding: 10% 5% 20% 5%;
 	width: 90%;
 	height: auto;
 	display: flex;
